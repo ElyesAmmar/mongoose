@@ -6,9 +6,9 @@ const {Schema,model} = mongoose;
 const Person = new Schema ({
     name: {type:String, required:true},
     age: Number,
-    favoriteFoods: [{body:String}]
+    favoriteFoods: []
 })
 
 const Post = model("Posts", Person);
 
-model.exports = Post;
+module.exports = Post;
